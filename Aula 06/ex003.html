@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa...</title>
+    <style>
+        body {background-color: aliceblue;
+        color:rgb(255, 127, 133);
+        font: normal 20pt Arial;
+        };
+        h1{
+            color: rgb(38, 0, 255);
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Olá, Mundo!</h1>
+    <p>Já me livrei da maldição</p>
+    <script>
+        var n1 = Number.parseFloat(window.prompt('Digite um número'));
+        var n2 = Number.parseFloat(window.prompt('Digite outro número'));
+        var s = Number.parseFloat(n1 + n2); // Dúvida: como fazer a variável resultado ser Float e não Int
+        window.alert('A soma dos valores é ' + String(s)); // Concatenação
+        // number + number para  adição
+        // string + string para concatenação
+        // O javascript confunde, preciso forçar ele a fazer o que eu quero.
+        // number.parseInt(n) e number.parseFloat(n)
+
+    </script>
+</body>
+</html>
