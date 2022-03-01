@@ -36,16 +36,6 @@ undefined
 '1545.50'
 > n1.toFixed(2).replace('.',',')
 '1545,50'
-> n1.toLocaleString('pt-BR',{style: 'currency: 'BRL'})
-n1.toLocaleString('pt-BR',{style: 'currency: 'BRL'})
-                                              ^^^
-
-Uncaught SyntaxError: Unexpected identifier
-> n1.toLocaleString('pt-BR',{style: `currency: `BRL`})
-n1.toLocaleString('pt-BR',{style: `currency: `BRL`})
-                                              ^^^   
-
-Uncaught SyntaxError: Unexpected identifier
 > n1.toLocaleString('pt-BR',{style: 'currency', currency: 'BRL'})
 'R$ 1.545,50'
 > n1.toLocaleString('pt-BR',{style: 'currency', currency: 'USD'})
